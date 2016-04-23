@@ -142,6 +142,8 @@ dispatch_async(backgroundQueue()) {
         print("ALL COMPLETED")
     }
     print("WAITED")
+    
+    XCPlaygroundPage.currentPage.finishExecution()
 }
 
 
