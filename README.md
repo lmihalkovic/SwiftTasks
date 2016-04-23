@@ -20,8 +20,23 @@ Example:
     }
     
     // Wait 20s max and execute completion
+    print("WAIT for completion")
     tg.join(millis:20000) {
         print("ALL COMPLETED")
     }
+    print("WAITED")
     
 ```
+
+will result in the following output
+
+
+
+```
+WAIT for completion
+wait 1.5s (doFirst) - MAIN queue
+wait 3s - background queue
+ALL COMPLETED
+WAITED
+```
+
